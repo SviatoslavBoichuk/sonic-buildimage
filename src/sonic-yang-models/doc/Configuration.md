@@ -85,6 +85,7 @@ Table of Contents
          * [SYSTEM_DEFAULTS table](#systemdefaults-table)
          * [RADIUS](#radius)
          * [Static DNS](#static-dns)
+         * [Banner messages](#banner-messages)
    * [For Developers](#for-developers)
       * [Generating Application Config by Jinja2 Template](#generating-application-config-by-jinja2-template)
       * [Incremental Configuration by Subscribing to ConfigDB](#incremental-configuration-by-subscribing-to-configdb)
@@ -2555,6 +2556,24 @@ The DNS_NAMESERVER table introduces static DNS nameservers configuration.
 	},
 }
 ```
+
+### Banner messages
+
+The BANNER_MESSAGE table introduces static banner messages configuration.
+
+```json
+{
+    "BANNER_MESSAGE": {
+        "MESSAGE": {
+            "state": "enabled",
+            "login": "Some login message",
+            "motd": "ome message of the day",
+            "logout": "Some logout message"
+        }
+    }
+}
+```
+
 
 ### FIPS
 

@@ -5,6 +5,14 @@
                     "vni" : "100"
                 }
         },
+	"BANNER_MESSAGE": {
+	    "MESSAGE": {
+	        "state": "enabled",
+	        "login": "Some login message",
+	        "motd": "Some message of the day",
+	        "logout": "Some logout message"
+            }
+        },
         "DHCP_SERVER": {
             "192.0.0.8": {},
             "192.0.0.8": {}
